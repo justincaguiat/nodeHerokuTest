@@ -1,0 +1,12 @@
+<strong ng-show="currentDoctor">Current Doctor - {{:: currentDoctor}}</strong>
+<div>
+    
+   <select class="btn btn navbar-left" ng-change="selectedPatient(patient)" ng-options="patient.firstname+' '+patient.lastname for patient in patientModel" ng-model="patient">
+				<option value="" disabled selected>Choose Patient...</option>
+            </select>
+          <input type="text" class="form-control" placeholder="Search for Patient or Doctor" ng-model="searchValue" ng-keyup="searchLastName(searchValue)">
+        
+   
+    <div ng-include src="'patientlist.html'"></div>
+</div><!-- /.col-lg-6 -->
+

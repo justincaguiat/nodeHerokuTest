@@ -1,0 +1,24 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+#container {
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.pad{
+    margin-left:5px;
+
+}
+
+th {
+    background-color: #424242;
+    color: white;
+} 

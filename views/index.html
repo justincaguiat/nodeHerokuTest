@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="PatDoc">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" >
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header ">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+              <a class="navbar-brand" href="#patientdetails">Add Patient</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#login">Doctor Login</a></li>
+              <li><a href="#patientsearch">Patient Search</a></li>
+                <li><a><strong ng-show="currentDoctor">Current Doctor - {{:: currentDoctor}}</strong></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <div >
+            <div class="row " ng-view=""></div>
+        </div>
+     </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-route.min.js"></script>
+   <script src="app.js"></script>
+   <script src="login.js"></script>
+   <script src="doctor.js"></script>
+   <script src="patient.js"></script>
+      <script src="router.js"></script>
+  </body>
+</html>
