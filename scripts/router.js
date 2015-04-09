@@ -26,6 +26,6 @@ app.config(['$routeProvider',
             controller: 'patientSearchCtrl'
         }).
         otherwise({
-            redirectTo: '/patientsearch'
+            redirectTo: '/login'
         });
     }]);
